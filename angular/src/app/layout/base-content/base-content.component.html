@@ -1,0 +1,35 @@
+<nz-content class="outer-content">
+  <nz-layout class="inner-layout">
+    <nz-sider nzWidth="200px" nzTheme="light">
+      <ul nz-menu nzMode="inline" class="sider-menu">
+        <li nz-menu-item nzSelected routerLink="/dashboard">
+          <img src="../../assets/icon/speedometer.png" alt="dashboard">
+          <span style="padding-left: 5px;">Dashboard</span>
+        </li>
+        <li nz-submenu nzOpen nzTitle="Custom" nzIcon="user" routerLink="/custom">
+          <ul>
+            <li nz-menu-item>Applications</li>
+            <li nz-menu-item>Pages</li>
+            <li nz-menu-item>Theme</li>
+          </ul>
+        </li>
+        <li nz-submenu nzOpen nzTitle="CRUD" nzIcon="laptop" routerLink="/crud">
+          <ul>
+            <li nz-menu-item>Forms</li>
+            <li nz-menu-item>KTDatatable</li>
+          </ul>
+        </li>
+        <li nz-submenu nzOpen nzTitle="Features" nzIcon="notification" routerLink="/features">
+          <ul>
+            <li nz-menu-item>Bootstrap</li>
+            <li nz-menu-item>Cards</li>
+          </ul>
+        </li>
+      </ul>
+    </nz-sider>
+
+    <nz-content class="inner-content">
+      <router-outlet></router-outlet>
+    </nz-content>
+  </nz-layout>
+</nz-content>
